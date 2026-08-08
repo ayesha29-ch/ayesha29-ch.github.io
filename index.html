@@ -24,7 +24,7 @@
             padding-bottom: 60px;
         }
 
-        /* Top Header Section */
+        /* Header */
         header {
             text-align: center;
             padding: 60px 20px 10px 20px;
@@ -44,7 +44,7 @@
             font-weight: 500;
         }
 
-        /* Navigation Bar */
+        /* Navigation */
         nav {
             display: flex;
             justify-content: center;
@@ -64,7 +64,7 @@
             color: #38bdf8;
         }
 
-        /* Main Layout Grid */
+        /* Main Container */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -80,7 +80,7 @@
             }
         }
 
-        /* Card / Node Box Styling */
+        /* Cards */
         .card-node {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid #1e293b;
@@ -123,7 +123,7 @@
         .btn-blue { background: #0284c7; color: white; }
         .btn-dark { background: #1e293b; color: white; border: 1px solid #334155; }
 
-        /* Tech Pills */
+        /* Skills Pills */
         .skills-grid {
             display: flex;
             flex-wrap: wrap;
@@ -140,7 +140,7 @@
             border: 1px solid #334155;
         }
 
-        /* Project Cards Styling */
+        /* Project Cards */
         .project-card {
             background: #0f172a;
             border: 1px solid #1e293b;
@@ -203,15 +203,14 @@
         <p class="tagline">Data Science Student | Machine Learning Enthusiast</p>
     </header>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar -->
     <nav>
         <a href="#about">About</a>
         <a href="#projects" class="active">Projects Portfolio</a>
         <a href="#skills">Technical Skills</a>
-        <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Container -->
+    <!-- Main Content Container -->
     <div class="container">
         
         <!-- Left Sidebar Nodes -->
@@ -239,9 +238,9 @@
             </div>
         </aside>
 
-        <!-- Right Main Content -->
+        <!-- Right Main Section -->
         <main>
-            <!-- 1. About Section -->
+            <!-- 1. ABOUT ME -->
             <div id="about" class="card-node">
                 <h3>About Me</h3>
                 <p style="line-height: 1.7; font-size: 1rem; color: #cbd5e1;">
@@ -249,11 +248,10 @@
                 </p>
             </div>
 
-            <!-- 2. Projects Section -->
+            <!-- 2. PROJECTS PORTFOLIO (PEHLE AAYEGA) -->
             <div id="projects" class="card-node">
                 <h3>Projects Portfolio</h3>
                 
-                <!-- Final Year Project (AgroSeqAI) -->
                 <div class="project-card">
                     <div class="project-header">
                         <h4>🌱 AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
@@ -277,7 +275,7 @@
                 </div>
             </div>
 
-            <!-- 3. Technical Skills Section (Moved to Last) -->
+            <!-- 3. TECHNICAL SKILLS (LAST MEIN AAYEGA) -->
             <div id="skills" class="card-node">
                 <h3>Technical Skills</h3>
                 <div class="skills-grid">
