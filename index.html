@@ -80,7 +80,15 @@
             }
         }
 
-        /* Cards */
+        /* Main Section Title */
+        .section-title {
+            color: #ffffff;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* Cards General */
         .card-node {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid #1e293b;
@@ -140,58 +148,42 @@
             border: 1px solid #334155;
         }
 
-        /* Project Cards */
+        /* Project Cards (Exact Match with Image Style) */
         .project-card {
-            background: #0f172a;
+            background: rgba(15, 23, 42, 0.85);
             border: 1px solid #1e293b;
-            border-radius: 10px;
-            padding: 22px;
-            margin-top: 15px;
-        }
-
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 10px;
-            margin-bottom: 10px;
+            border-radius: 12px;
+            padding: 28px 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
         }
 
         .project-card h4 {
             color: #ffffff;
-            font-size: 1.25rem;
+            font-size: 1.4rem;
             font-weight: 700;
-        }
-
-        .badge-fyp {
-            background: rgba(56, 189, 248, 0.1);
-            color: #38bdf8;
-            border: 1px solid rgba(56, 189, 248, 0.3);
-            padding: 4px 10px;
-            border-radius: 6px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            white-space: nowrap;
-        }
-
-        .project-card p {
-            font-size: 0.95rem;
-            line-height: 1.6;
-            color: #94a3b8;
-            margin-bottom: 15px;
-        }
-
-        .project-highlights {
-            margin-bottom: 15px;
-            padding-left: 18px;
-            color: #cbd5e1;
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .project-highlights li {
             margin-bottom: 6px;
+        }
+
+        .project-subtitle {
+            color: #00bcd4;
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .project-bullets {
+            list-style-type: disc;
+            padding-left: 20px;
+            color: #cbd5e1;
+            font-size: 0.98rem;
+            line-height: 1.7;
+        }
+
+        .project-bullets li {
+            margin-bottom: 12px;
         }
     </style>
 </head>
@@ -248,41 +240,45 @@
                 </p>
             </div>
 
-            <!-- 2. PROJECTS PORTFOLIO (PEHLE AAYEGA) -->
-            <div id="projects" class="card-node">
-                <h3>Projects Portfolio</h3>
+            <!-- 2. PROJECTS PORTFOLIO (TECHNICAL SKILLS SE PEHLE) -->
+            <div id="projects">
+                <h3 class="section-title">Projects Portfolio</h3>
                 
+                <!-- Individual Card 1 -->
                 <div class="project-card">
-                    <div class="project-header">
-                        <h4>🌱 AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
-                        <span class="badge-fyp">FINAL YEAR PROJECT</span>
-                    </div>
-                    <p>
-                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <i>Cucumis sativus</i>) under changing environmental conditions[cite: 1].
-                    </p>
-                    <ul class="project-highlights">
-                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment[cite: 1].</li>
-                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy[cite: 1].</li>
-                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots[cite: 1].</li>
+                    <h4>AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
+                    <div class="project-subtitle">BIOINFORMATICS & MACHINE LEARNING FINAL YEAR PROJECT</div>
+                    
+                    <ul class="project-bullets">
+                        <li>Engineered an automated end-to-end RNA-Seq bioinformatics pipeline integrating FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence preprocessing and gene expression quantification[cite: 1].</li>
+                        <li>Developed high-performance Random Forest and Support Vector Machine (SVM) models explicitly optimized for classifying plant stress responses under drought conditions[cite: 1].</li>
+                        <li>Built an interactive Flask-backed web application delivering real-time predictions alongside automated generation of differential gene expression heatmaps, PCA, and volcano plots[cite: 1].</li>
                     </ul>
-                    <div class="skills-grid" style="margin-top: 15px;">
-                        <span class="pill">Python</span>
-                        <span class="pill">Flask</span>
-                        <span class="pill">Random Forest / SVM</span>
-                        <span class="pill">RNA-Seq Tools</span>
-                        <span class="pill">Matplotlib & Seaborn</span>
-                    </div>
+                </div>
+
+                <!-- Individual Card 2 -->
+                <div class="project-card">
+                    <h4>Heart Failure Data Analysis Using Tableau Dashboard</h4>
+                    <div class="project-subtitle">HEALTHCARE DATA ANALYTICS & VISUALIZATION PROJECT</div>
+                    
+                    <ul class="project-bullets">
+                        <li>Engineered an interactive Tableau dashboard utilizing patient clinical datasets (including age, gender, cholesterol level, and chest pain parameters) to uncover critical cardiovascular trends and risk factors[cite: 2].</li>
+                        <li>Designed dynamic filters and comparative analytical charts to transform multi-dimensional raw health data into accessible visual metrics for clinical pattern identification[cite: 2].</li>
+                        <li>Extracted key healthcare insights demonstrating critical correlations between elevated cholesterol levels, specific chest pain classifications, and patient vulnerability across demographic groups[cite: 2].</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 3. TECHNICAL SKILLS (LAST MEIN AAYEGA) -->
+            <!-- 3. TECHNICAL SKILLS -->
             <div id="skills" class="card-node">
                 <h3>Technical Skills</h3>
                 <div class="skills-grid">
                     <span class="pill">Python</span>
+                    <span class="pill">Tableau</span>
                     <span class="pill">Flask</span>
                     <span class="pill">Scikit-Learn</span>
                     <span class="pill">Pandas & NumPy</span>
+                    <span class="pill">Data Visualization</span>
                     <span class="pill">Bioinformatics (RNA-Seq)</span>
                     <span class="pill">HISAT2 & fastp</span>
                     <span class="pill">FastQC & featureCounts</span>
