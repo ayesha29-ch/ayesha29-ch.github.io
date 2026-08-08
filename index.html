@@ -22,12 +22,13 @@
             background-size: 30px 30px;
             color: #94a3b8;
             padding-bottom: 60px;
+            scroll-behavior: smooth;
         }
 
         /* Header */
         header {
             text-align: center;
-            padding: 60px 20px 10px 20px;
+            padding: 60px 20px 20px 20px;
         }
 
         h1.main-title {
@@ -35,13 +36,7 @@
             font-weight: 800;
             color: #ffffff;
             letter-spacing: 1.5px;
-            margin-bottom: 10px;
-        }
-
-        .tagline {
-            font-size: 1.25rem;
-            color: #38bdf8;
-            font-weight: 500;
+            margin-bottom: 0px;
         }
 
         /* Navigation */
@@ -140,7 +135,7 @@
             border: 1px solid #334155;
         }
 
-        /* Exact Project Card Styling */
+        /* Project Card Styling */
         .project-card {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid #1e293b;
@@ -223,7 +218,6 @@
     <!-- Header Section -->
     <header>
         <h1 class="main-title">Ayesha Rizwan</h1>
-        <p class="tagline">Data Science Student | Machine Learning Enthusiast</p>
     </header>
 
     <!-- Navigation Bar -->
@@ -231,6 +225,7 @@
         <a href="#about">About</a>
         <a href="#projects" class="active">Projects Portfolio</a>
         <a href="#skills">Technical Skills</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <!-- Main Content Container -->
@@ -239,7 +234,7 @@
         <!-- Left Sidebar Nodes -->
         <aside>
             <!-- Contact Node -->
-            <div class="card-node">
+            <div id="contact" class="card-node">
                 <h3>Contact Node</h3>
                 <a href="mailto:ayesha@example.com" class="btn-node btn-red">
                     <i class="fa-solid fa-envelope"></i> Open Gmail
@@ -281,12 +276,12 @@
                         <span class="project-badge">FINAL YEAR PROJECT</span>
                     </div>
                     <p class="project-desc">
-                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <em>Cucumis sativus</em>) under changing environmental conditions[cite: 1].
+                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <em>Cucumis sativus</em>) under changing environmental conditions.
                     </p>
                     <ul class="project-bullets">
-                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment[cite: 1].</li>
-                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy[cite: 1].</li>
-                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots[cite: 1].</li>
+                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment.</li>
+                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy.</li>
+                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots.</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">Python</span>
@@ -304,12 +299,12 @@
                         <span class="project-badge">DATA ANALYTICS PROJECT</span>
                     </div>
                     <p class="project-desc">
-                        A comprehensive visual analytics project transforming complex clinical healthcare datasets into dynamic, interactive Tableau dashboards for identifying cardiovascular risk factors and patient patterns[cite: 2].
+                        A comprehensive visual analytics project transforming complex clinical healthcare datasets into dynamic, interactive Tableau dashboards for identifying cardiovascular risk factors and patient patterns.
                     </p>
                     <ul class="project-bullets">
-                        <li><strong>Clinical Data Preprocessing:</strong> Ingested and structured Kaggle heart disease patient metrics including cholesterol levels, age, sex, and chest pain parameters[cite: 2].</li>
-                        <li><strong>Interactive Dashboard Design:</strong> Built dynamic Tableau charts with customized user filters to explore complex multi-variable risk correlations seamlessly[cite: 2].</li>
-                        <li><strong>Healthcare Risk Insights:</strong> Identified critical patterns demonstrating strong risk variations across demographic groups, cholesterol indicators, and chest pain classifications[cite: 2].</li>
+                        <li><strong>Clinical Data Preprocessing:</strong> Ingested and structured Kaggle heart disease patient metrics including cholesterol levels, age, sex, and chest pain parameters.</li>
+                        <li><strong>Interactive Dashboard Design:</strong> Built dynamic Tableau charts with customized user filters to explore complex multi-variable risk correlations seamlessly.</li>
+                        <li><strong>Healthcare Risk Insights:</strong> Identified critical patterns demonstrating strong risk variations across demographic groups, cholesterol indicators, and chest pain classifications.</li>
                     </ul>
                     <div class="tech-tags">
                         <span class="tech-tag">Tableau</span>
