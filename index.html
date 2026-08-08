@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayesha Rizwan | Portfolio</title>
-    <!-- Font Awesome Icons for buttons -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -21,7 +21,7 @@
                 linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 30px 30px;
             color: #94a3b8;
-            padding-bottom: 50px;
+            padding-bottom: 60px;
         }
 
         /* Top Header Section */
@@ -64,7 +64,7 @@
             color: #38bdf8;
         }
 
-        /* Main Container & Layout */
+        /* Main Layout Grid */
         .container {
             max-width: 1100px;
             margin: 0 auto;
@@ -80,7 +80,7 @@
             }
         }
 
-        /* Node Box Styling */
+        /* Card / Node Box Styling */
         .card-node {
             background: rgba(15, 23, 42, 0.85);
             border: 1px solid #1e293b;
@@ -99,7 +99,7 @@
             padding-bottom: 8px;
         }
 
-        /* Node Buttons */
+        /* Buttons */
         .btn-node {
             display: flex;
             align-items: center;
@@ -122,6 +122,44 @@
         .btn-red { background: #dc2626; color: white; }
         .btn-blue { background: #0284c7; color: white; }
         .btn-dark { background: #1e293b; color: white; border: 1px solid #334155; }
+
+        /* Tech Pills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pill {
+            background: #1e293b;
+            color: #38bdf8;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            border: 1px solid #334155;
+        }
+
+        /* Project Cards */
+        .project-card {
+            background: #0f172a;
+            border: 1px solid #1e293b;
+            border-radius: 10px;
+            padding: 18px;
+            margin-top: 15px;
+        }
+
+        .project-card h4 {
+            color: #ffffff;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #94a3b8;
+        }
     </style>
 </head>
 <body>
@@ -140,12 +178,11 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <!-- Main Section -->
+    <!-- Main Container -->
     <div class="container">
         
         <!-- Left Sidebar Nodes -->
         <aside>
-            
             <!-- Contact Node -->
             <div class="card-node">
                 <h3>Contact Node</h3>
@@ -167,12 +204,48 @@
                 <p style="color: #38bdf8; font-weight: 600; font-size: 0.95rem; margin-bottom: 6px;">BS Data Science</p>
                 <p style="font-size: 0.88rem; color: #94a3b8;">Academic Standing: 6th Semester</p>
             </div>
-
         </aside>
 
-        <!-- Right Side Main Section (Hum Next Step Mein Fill Karenge) -->
+        <!-- Right Main Content -->
         <main>
-            <!-- Content will be added here next -->
+            <!-- About Section -->
+            <div id="about" class="card-node">
+                <h3>About Me</h3>
+                <p style="line-height: 1.7; font-size: 1rem;">
+                    Passionate Data Science student specializing in Machine Learning, Data Analysis, and Predictive Modeling. 
+                    I enjoy building data-driven applications, exploring pattern recognition algorithms, and solving real-world problems through data.
+                </p>
+            </div>
+
+            <!-- Technical Skills Section -->
+            <div id="skills" class="card-node">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <span class="pill">Python</span>
+                    <span class="pill">Pandas</span>
+                    <span class="pill">NumPy</span>
+                    <span class="pill">Scikit-Learn</span>
+                    <span class="pill">SQL</span>
+                    <span class="pill">Machine Learning</span>
+                    <span class="pill">Git & GitHub</span>
+                    <span class="pill">Jupyter Notebook</span>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="projects" class="card-node">
+                <h3>Projects Portfolio</h3>
+                
+                <div class="project-card">
+                    <h4>🤖 Machine Learning & Data Analytics Projects</h4>
+                    <p>Collection of predictive algorithms, exploratory data analysis, and classification models using Python and Scikit-Learn.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>📊 Interactive Web Applications</h4>
+                    <p>Data visualization dashboards and machine learning deployment projects built using modern web techniques.</p>
+                </div>
+            </div>
         </main>
 
     </div>
