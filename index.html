@@ -206,8 +206,8 @@
     <!-- Navigation -->
     <nav>
         <a href="#about">About</a>
-        <a href="#skills">Technical Skills</a>
         <a href="#projects" class="active">Projects Portfolio</a>
+        <a href="#skills">Technical Skills</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -241,7 +241,7 @@
 
         <!-- Right Main Content -->
         <main>
-            <!-- About Section -->
+            <!-- 1. About Section -->
             <div id="about" class="card-node">
                 <h3>About Me</h3>
                 <p style="line-height: 1.7; font-size: 1rem; color: #cbd5e1;">
@@ -249,7 +249,35 @@
                 </p>
             </div>
 
-            <!-- Technical Skills Section -->
+            <!-- 2. Projects Section -->
+            <div id="projects" class="card-node">
+                <h3>Projects Portfolio</h3>
+                
+                <!-- Final Year Project (AgroSeqAI) -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h4>🌱 AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
+                        <span class="badge-fyp">FINAL YEAR PROJECT</span>
+                    </div>
+                    <p>
+                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <i>Cucumis sativus</i>) under changing environmental conditions[cite: 1].
+                    </p>
+                    <ul class="project-highlights">
+                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment[cite: 1].</li>
+                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy[cite: 1].</li>
+                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots[cite: 1].</li>
+                    </ul>
+                    <div class="skills-grid" style="margin-top: 15px;">
+                        <span class="pill">Python</span>
+                        <span class="pill">Flask</span>
+                        <span class="pill">Random Forest / SVM</span>
+                        <span class="pill">RNA-Seq Tools</span>
+                        <span class="pill">Matplotlib & Seaborn</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Technical Skills Section (Moved to Last) -->
             <div id="skills" class="card-node">
                 <h3>Technical Skills</h3>
                 <div class="skills-grid">
@@ -262,35 +290,6 @@
                     <span class="pill">FastQC & featureCounts</span>
                     <span class="pill">SQLite</span>
                 </div>
-            </div>
-
-            <!-- Projects Section -->
-            <div id="projects" class="card-node">
-                <h3>Projects Portfolio</h3>
-                
-                <!-- Final Year Project (AgroSeqAI) -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h4>🌱 AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
-                        <span class="badge-fyp">FINAL YEAR PROJECT</span>
-                    </div>
-                    <p>
-                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <i>Cucumis sativus</i>) under changing environmental conditions.
-                    </p>
-                    <ul class="project-highlights">
-                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment.</li>
-                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy.</li>
-                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots.</li>
-                    </ul>
-                    <div class="skills-grid" style="margin-top: 15px;">
-                        <span class="pill">Python</span>
-                        <span class="pill">Flask</span>
-                        <span class="pill">Random Forest / SVM</span>
-                        <span class="pill">RNA-Seq Tools</span>
-                        <span class="pill">Matplotlib & Seaborn</span>
-                    </div>
-                </div>
-
             </div>
         </main>
 
