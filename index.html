@@ -133,32 +133,65 @@
         .pill {
             background: #1e293b;
             color: #38bdf8;
-            padding: 8px 16px;
+            padding: 6px 14px;
             border-radius: 20px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 600;
             border: 1px solid #334155;
         }
 
-        /* Project Cards */
+        /* Project Cards Styling */
         .project-card {
             background: #0f172a;
             border: 1px solid #1e293b;
             border-radius: 10px;
-            padding: 18px;
+            padding: 22px;
             margin-top: 15px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 10px;
         }
 
         .project-card h4 {
             color: #ffffff;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+
+        .badge-fyp {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
         }
 
         .project-card p {
             font-size: 0.95rem;
-            line-height: 1.5;
+            line-height: 1.6;
             color: #94a3b8;
+            margin-bottom: 15px;
+        }
+
+        .project-highlights {
+            margin-bottom: 15px;
+            padding-left: 18px;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .project-highlights li {
+            margin-bottom: 6px;
         }
     </style>
 </head>
@@ -202,13 +235,13 @@
                 <h3>Academic Node</h3>
                 <h4 style="color: #ffffff; font-size: 1.05rem; margin-bottom: 6px;">Emerson University Multan</h4>
                 <p style="color: #38bdf8; font-weight: 600; font-size: 0.95rem; margin-bottom: 6px;">BS Data Science</p>
-                <p style="font-size: 0.88rem; color: #94a3b8;">Academic Standing: 6th Semester</p>
+                <p style="font-size: 0.88rem; color: #94a3b8;">Academic Standing: Final Year Project</p>
             </div>
         </aside>
 
         <!-- Right Main Content -->
         <main>
-            <!-- About Section Matching Your Screenshot -->
+            <!-- About Section -->
             <div id="about" class="card-node">
                 <h3>About Me</h3>
                 <p style="line-height: 1.7; font-size: 1rem; color: #cbd5e1;">
@@ -221,13 +254,13 @@
                 <h3>Technical Skills</h3>
                 <div class="skills-grid">
                     <span class="pill">Python</span>
-                    <span class="pill">Pandas</span>
-                    <span class="pill">NumPy</span>
+                    <span class="pill">Flask</span>
                     <span class="pill">Scikit-Learn</span>
-                    <span class="pill">SQL</span>
-                    <span class="pill">Machine Learning</span>
-                    <span class="pill">Git & GitHub</span>
-                    <span class="pill">Jupyter Notebook</span>
+                    <span class="pill">Pandas & NumPy</span>
+                    <span class="pill">Bioinformatics (RNA-Seq)</span>
+                    <span class="pill">HISAT2 & fastp</span>
+                    <span class="pill">FastQC & featureCounts</span>
+                    <span class="pill">SQLite</span>
                 </div>
             </div>
 
@@ -235,15 +268,29 @@
             <div id="projects" class="card-node">
                 <h3>Projects Portfolio</h3>
                 
+                <!-- Final Year Project (AgroSeqAI) -->
                 <div class="project-card">
-                    <h4>🤖 Machine Learning & Data Analytics Projects</h4>
-                    <p>Collection of predictive algorithms, exploratory data analysis, and classification models using Python and Scikit-Learn.</p>
+                    <div class="project-header">
+                        <h4>🌱 AgroSeqAI: Intelligent Plant Transcriptome Analysis Framework</h4>
+                        <span class="badge-fyp">FINAL YEAR PROJECT</span>
+                    </div>
+                    <p>
+                        A web-based intelligent framework leveraging RNA-Seq data and machine learning to analyze and predict plant stress responses (drought condition case study on <i>Cucumis sativus</i>) under changing environmental conditions.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><strong>Automated Pipeline:</strong> End-to-end integration of FastQC, fastp, HISAT2, samtools, and featureCounts for transcriptomic sequence alignment.</li>
+                        <li><strong>ML Stress Prediction:</strong> Implementation of Random Forest and Support Vector Machines (SVM) targeting ≥85% model classification accuracy.</li>
+                        <li><strong>Web Interface & Visualizations:</strong> Interactive Flask web platform generating differential gene expression heatmaps, PCA plots, and volcano plots.</li>
+                    </ul>
+                    <div class="skills-grid" style="margin-top: 15px;">
+                        <span class="pill">Python</span>
+                        <span class="pill">Flask</span>
+                        <span class="pill">Random Forest / SVM</span>
+                        <span class="pill">RNA-Seq Tools</span>
+                        <span class="pill">Matplotlib & Seaborn</span>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <h4>📊 Interactive Web Applications</h4>
-                    <p>Data visualization dashboards and machine learning deployment projects built using modern web techniques.</p>
-                </div>
             </div>
         </main>
 
